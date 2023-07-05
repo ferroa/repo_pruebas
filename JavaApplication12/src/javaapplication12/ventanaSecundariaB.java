@@ -8,12 +8,12 @@ package javaapplication12;
  *
  * @author Realice
  */
-public class ventanaSecundaria extends javax.swing.JFrame {
+public class ventanaSecundariaB extends javax.swing.JFrame {
 
     /**
-     * Creates new form ventanaSecundaria
+     * Creates new form ventanaSecundariaB
      */
-    public ventanaSecundaria() {
+    public ventanaSecundariaB() {
         initComponents();
     }
 
@@ -28,24 +28,16 @@ public class ventanaSecundaria extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        btnVolver = new javax.swing.JButton();
-        btnIrVentanaSB = new javax.swing.JButton();
+        btnVentanaS = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Ventana secundari");
+        jLabel1.setText("ventana Secundaria B");
 
-        btnVolver.setText("Volver ventana principal");
-        btnVolver.addActionListener(new java.awt.event.ActionListener() {
+        btnVentanaS.setText("volver ventana S");
+        btnVentanaS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVolverActionPerformed(evt);
-            }
-        });
-
-        btnIrVentanaSB.setText("Ir ventanaS B");
-        btnIrVentanaSB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIrVentanaSBActionPerformed(evt);
+                btnVentanaSActionPerformed(evt);
             }
         });
 
@@ -54,26 +46,23 @@ public class ventanaSecundaria extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(240, 240, 240)
-                .addComponent(jLabel1)
-                .addContainerGap(234, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(btnVolver)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnIrVentanaSB)
-                .addGap(93, 93, 93))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(231, 231, 231)
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(btnVentanaS)))
+                .addContainerGap(215, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 376, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnVolver)
-                    .addComponent(btnIrVentanaSB))
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 339, Short.MAX_VALUE)
+                .addComponent(btnVentanaS)
+                .addGap(23, 23, 23))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -90,21 +79,12 @@ public class ventanaSecundaria extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
+    private void btnVentanaSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVentanaSActionPerformed
         // TODO add your handling code here:
-        
-        ventana_principal ventanaP = new ventana_principal();
-        ventanaP.setVisible(true);
+        ventanaSecundaria ventanaS = new ventanaSecundaria();
+        ventanaS.setVisible(true);
         this.dispose();
-              
-    }//GEN-LAST:event_btnVolverActionPerformed
-
-    private void btnIrVentanaSBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIrVentanaSBActionPerformed
-        // TODO add your handling code here:
-        ventanaSecundariaB ventanaSB = new ventanaSecundariaB();
-        ventanaSB.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnIrVentanaSBActionPerformed
+    }//GEN-LAST:event_btnVentanaSActionPerformed
 
     /**
      * @param args the command line arguments
@@ -123,27 +103,26 @@ public class ventanaSecundaria extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ventanaSecundaria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaSecundariaB.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ventanaSecundaria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaSecundariaB.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ventanaSecundaria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaSecundariaB.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ventanaSecundaria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaSecundariaB.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ventanaSecundaria().setVisible(true);
+                new ventanaSecundariaB().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnIrVentanaSB;
-    private javax.swing.JButton btnVolver;
+    private javax.swing.JButton btnVentanaS;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
