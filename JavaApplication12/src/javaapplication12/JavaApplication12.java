@@ -22,6 +22,8 @@ public class JavaApplication12 {
         
         System.out.println("tercer print para la prueba.");
         
+        System.out.println("impresion antes de merge a main desde ramaPruebas1");
+        
         
         
     }
